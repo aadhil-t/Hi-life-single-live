@@ -1,0 +1,22 @@
+
+@import "font";
+@import "variables";
+@import "mixins";
+@import "default";
+
+// Common Blocks //
+@import "common-blk";
+@import "swiper";
+@import "slick";
+@import "slick-theme";
+
+// Sections //
+@import "banner-sec";
+@import "apartment-sec";
+@import "about-sec";
+@import "client-sec";
+@import "trust-sec";
+@import "villa-sec";
+@import "video-sec";
+@import "bank-sec";
+@import "footer-sec";

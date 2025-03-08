@@ -1,0 +1,182 @@
+html{
+	color: $primary-color;
+	font-size: 10px;	
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	font-size: 1.8rem;
+ 	@include primary-font;
+	color:$txt-color;
+	overflow-x: hidden;
+	background: $theme-bg;
+}
+
+a {
+	color: inherit;
+	outline: none;
+	text-decoration:none;
+	&:visited {
+		color: inherit;
+	}
+
+	&:hover,
+	&:active {
+		color: inherit;
+		&:visited {
+			color: inherit;
+	   }
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+abbr[title] {border-bottom: 0.1rem dotted;}
+
+b, strong {font-weight: bold;}
+
+dfn {
+	font-style: italic;
+}
+hr {
+	display: block;
+	height: 0.15rem;
+	border: 0;
+	margin: 1em 0;
+	padding: 0;
+}
+ins {
+	background: none;
+	color: $primary-color;
+	text-decoration: underline;
+}
+del{
+	background: none;
+	color: $theme-red;
+	text-decoration: line-through;	
+}
+
+pre {
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+small {
+	font-size: 85%;
+}
+big {
+	font-size: 125%;
+}
+sub, sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+nav{
+	ul,ol{
+		list-style: none;
+		list-style-image: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+	@include primary-font;
+}
+
+h1,h2, h3, h4, h5, h6 {
+	margin:0;
+	padding:0;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0.5em;
+	padding-bottom: 0;
+}
+ul,ol {
+	margin: 0 0 1em 0.75em;
+	padding: 0 0 1em 0.75em;
+}
+ul {
+	list-style: disc;
+}
+ol {
+	list-style: decimal;
+}
+
+.container {
+	// width: 100%;
+	padding: 0 2rem;
+	margin: 0 auto;
+    max-width:124rem;
+}
+.full-container{width:100%;max-width:100%;padding:0 2rem;}
+
+.clearfix:after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color:$txt-color;
+}
+
+h1{
+	font-size: 6rem;
+
+}
+h2{
+	font-size: 4.5rem;
+
+}
+h3{
+	
+	font-size: 4rem;
+}
+
+h4{
+
+	font-size: 3.5rem;
+
+}
+h5{
+	font-size: 2.5rem;
+
+}
+h6{
+	font-size: 2rem;
+
+}
+p,li{
+	font-size: 1.7rem;
+	color: $txt-color-1;
+
+}

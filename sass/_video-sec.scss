@@ -1,0 +1,109 @@
+.video-sec{
+    padding-top: 8.1rem;
+    padding-bottom: 10rem;
+    @media (max-width: $sm) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }     
+    .video-outer{
+        position: relative;
+        .video-blk{
+            display: flex;
+            align-items: center;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                gap: 3rem;
+            }     
+            .video-head{
+                h2{
+                    font-size: 4.5rem;
+                    line-height: 100%;
+                    font-weight: 400;
+                    @media (max-width: $sm) {
+                        font-size: 3.5rem;
+                        text-align: center;
+
+                    }
+                }
+                span{
+                    font-size: 4.5rem;
+                    line-height: 100%;
+                    font-weight: 600;
+                    @media (max-width: $sm) {
+                        font-size: 3.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+            .mySwiper-video{
+                width: 75%;
+                @media (max-width: $sm) {
+                    width: 97%;          
+                    right: -9px;              
+                }
+                .swiper-slide{
+                    img{
+                        @media (max-width: $md) {
+                            width: 97%;                        
+                        }
+                        @media (max-width: $sm) {
+                            width: 90%;                        
+                        }
+                    }
+                    h3{
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $txt-color-1;
+                        @media (max-width: 834px) {
+                            font-size: 1.5rem;                    
+                        }
+                        @media (max-width: $sm) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    h4{
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
+                        font-weight: 400;
+                        text-align: center;
+                        color: $txt-color-1;
+                        @media (max-width: 834px) {
+                            font-size: 1.5rem;   
+                            line-height: 1.4rem;                 
+                        }
+                        @media (max-width: $sm) {
+                            font-size: 1.2rem;
+                            line-height: 1.4rem;
+
+                        }    
+                    }
+                }
+            }
+           .video-btn{
+            display: flex;
+            position: absolute;
+            -webkit-box-pack: justify;
+            gap: 80rem;
+            -ms-flex-pack: justify;
+            right: -30px;
+            bottom: 130px; 
+            @media (max-width: 1024px) {
+                right: 78px;
+            }           
+            @media (max-width: $md) {
+                gap: 56rem;
+                right: 75px;
+                bottom: 105px;
+            }           
+            @media (max-width: $sm) {
+                display: none;
+            }           
+            .btn{
+                color: black;
+            }
+           }
+        }
+    }
+}

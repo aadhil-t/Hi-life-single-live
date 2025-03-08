@@ -1,0 +1,43 @@
+.aprt-blk{
+    .first-blk{
+        .mySwiper{
+            padding-top: 6.4rem;
+            padding-bottom: 4.1rem;
+            @media (max-width: $lg) {
+                padding-top: 3rem;
+            }
+            .swiper-pagination{
+                --swiper-theme-color: #c1c1c1;
+            }
+            .swiper-wrapper{
+                text-align: center;
+            }
+        }
+        .swip-txt{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.6rem;
+            padding-bottom: 24.7rem;
+            @media (max-width: $lg) {
+                padding-bottom: 3rem;
+            }
+            h2{
+                color: white !important;
+                font-size: 3.2rem;
+                font-weight: 500;
+                line-height: 4.5rem;
+                max-width: 29rem;
+                @media (max-width: $lg) {
+                    font-size: 3rem;
+                    line-height: 4.5rem;
+                }
+            }
+            .enq-btn-red{
+                width: 100%;
+                max-width: 23.5rem;
+    
+            }
+        }
+    }
+}

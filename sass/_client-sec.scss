@@ -1,0 +1,104 @@
+.client-sec{
+    .client-outer{
+        padding-top: 12.2rem;
+        @media (max-width: $sm) {
+            padding-top: 3rem;
+        }
+        .client-head{
+            text-align: center;
+            h1{
+                font-size: 4rem;
+                line-height: 4.688rem;
+                font-weight: 500;
+                padding-bottom: 9px;
+                @media (max-width: 834px) {
+                    font-size: 3.5rem;                    
+                }
+                @media (max-width: $sm) {
+                    font-size: 3.2rem;
+                }
+            }
+            h3{
+                font-size: 2.2rem;
+                line-height: 3rem;
+                font-weight: 400;
+                padding-bottom: 30px;
+                @media (max-width: $sm) {
+                    font-size: 1.5rem;
+                    line-height: 1rem;                
+                }
+            }
+        }
+        .client-slider{
+            position: relative;
+            .mySwiperclient{
+                margin-right: 12px;
+                @media (max-width: 1024px) {
+                    width: 81%;
+                    margin: 0;
+                    right: -97px;
+                }
+                @media (max-width: $md) {
+                    width: auto;
+                    right: 0;
+                    margin: 0 170px 0 188px;
+                }
+                @media (max-width: $sm) {
+                    width: 96%;
+                    margin: 12px;
+                    right: 3px;
+                }
+                .swiper-wrapper{
+                    .swiper-slide{
+                        // background-color: ;
+                        flex-shrink: unset;
+                        p{
+                            font-size: 1.6rem;
+                            font-weight: 400;
+                            line-height: 3.2rem;
+                            text-align: center;
+                            max-width: 40rem;   
+                        }
+                        h4{
+                            font-size: 1.8rem;
+                            font-weight: 400;
+                            line-height: 2.4rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            .client-btn{
+                display: flex;
+                position: absolute;
+                -webkit-box-pack: justify;
+                gap: 80rem;
+                -ms-flex-pack: justify;
+                gap: 128rem;
+                right: -42px;
+                top: 195px;
+                @media (max-width: 1024px) {
+                    right: 37px;
+                    gap: 85rem;
+
+                }           
+                @media (max-width: $md) {
+                    gap: 56rem;
+                    right: 75px;
+                    bottom: 105px;
+                }           
+                @media (max-width: 768px) {
+                    gap: 51rem;
+                    right: 68px;
+                    bottom: 105px;
+                }           
+                @media (max-width: $sm) {
+                    display: none;
+                }           
+                .btn{
+                    color: black;
+                }
+               }
+        }
+    }
+}

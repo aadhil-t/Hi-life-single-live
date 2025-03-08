@@ -1,0 +1,241 @@
+.apart-sec{
+    .aprt-blk {
+        width: 100%;
+        display: flex;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+            width: 100%;
+        }
+        .first-blk {
+            width: calc(100% * (532 / 1600)); // Adjusted proportionally
+            // height: 900px;
+            background-color: $secondary-color;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+        }
+        .second-blk {
+            width: calc(100% * (1068 / 1600)); // Adjusted proportionally
+            background-color: $primary-color-1;
+            // height: 900px;
+            @media (max-width: 1024px) {
+                width: 100%;
+            }
+            .sec-outer{
+                padding-left: 62px;
+                @media (max-width: $xl) {
+                    padding: 0 2rem;
+                }
+                .scnd-head-txt{
+                    h1{
+                        padding-top: 5.8rem;
+                        padding-bottom: 0.4rem;
+                        font-size: 4.5rem;
+                        line-height: 5rem;
+                        font-weight: 700;
+                        @media (max-width: $lg) {
+                            font-size: 3rem;
+                            padding-top: 3rem;
+                        }
+                        @media (max-width: $md) {
+                            font-size: 2.5rem;
+                        }
+                        @media (max-width: $sm) {
+                            font-size: 2.5rem;
+                        }
+                    }
+                    h2{
+                        font-size: 2.6rem; 
+                        line-height: 3.047rem;
+                        padding-bottom: 1.3rem;
+                        font-weight: 500;
+                        color: $txt-color-1;
+                        @media (max-width: $lg) {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 1.8rem;
+                        line-height: 2.109rem;
+                        font-weight: 400;
+                        color: $txt-color;
+                        @media (max-width: $lg) {
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+                .loc-blk{
+                    display: flex;
+                    gap: 11.6px;
+                }
+                .amenities-sec{
+                    display: flex;
+                    flex-direction: column;
+                    .amn-head{
+                        h2{
+                            padding-top: 3.6rem;
+                            padding-bottom: 2.8rem;
+                            font-size: 2.2rem;
+                            line-height: 2.578rem;
+                            font-weight: 400;
+                            @media (max-width: $lg) {
+                                font-size: 1.6rem;
+                                padding-top: 1.6rem;
+                                padding-bottom: 1rem;
+                            
+                            }
+                        }
+                        span{
+                            font-size: 2.2rem;
+                            line-height: 2.578rem;
+                            font-weight: 600;
+                            @media (max-width: $lg) {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    .amn-blk{
+                        display: flex;
+                        gap: 8px;
+                        justify-content: center;
+                        @media (max-width: $lg) {
+                            flex-wrap: wrap;
+                            justify-content: unset;
+                        }
+                        @media (max-width: 425px) {
+                            justify-content: center;
+                        }
+                        .amn-cnt-blk{
+                            width: 100%;
+                            max-width: 97px;
+                            gap: 18px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            text-align: center;
+                            @media (max-width: $lg) {
+                                gap: 10px;
+                                max-width: 110px;
+                            }
+                            @media (max-width: $md) {
+                                max-width: 175px;
+                            }
+                            @media (max-width: $sm) {
+                                gap: 10px;
+                                max-width: 120px;
+                            }
+                            @media (max-width: 375px) {
+                                gap: 10px;
+                                max-width: 105px;
+                            }
+                            p{
+                                margin: 0;
+                                font-size: 1.3rem;
+                                line-height: 1.523rem;
+                                font-weight: 400;
+                            }
+                            img{
+                                width: 70px;
+                                height: 70px;
+                            }
+                        }
+                    }
+                }
+                .proximity-sec{
+                    display: flex;
+                    flex-direction: column;
+                    .prox-head{
+                        h2{
+                            padding-top: 3.5rem;
+                            padding-bottom: 2.7rem;
+                            font-size: 2.2rem;
+                            line-height: 2.578rem;
+                            font-weight: 400;
+                            @media (max-width: $lg) {
+                                font-size: 1.6rem;
+                                padding-top: 1.6rem;
+                            }
+                        }
+                        span{
+                            font-size: 2.2rem;
+                            line-height: 2.578rem;
+                            font-weight: 600;
+                            @media (max-width: $lg) {
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                    .pro-km-blk{
+                        display: flex;
+                        gap: 134px;
+                        @media (max-width: $lg) {
+                            gap: 30px;
+                        }
+                        @media (max-width: 1024px) {
+                            gap: 170px;
+                        }
+                        @media (max-width: 904px) {
+                            gap: 110px;
+                        }
+                        @media (max-width: $sm) {
+                            gap: 40px;
+                            flex-wrap: wrap;       
+                        }
+                        @media (max-width: 425px) {
+                            gap: 41px;
+                            flex-wrap: wrap;  
+                            justify-content: unset;     
+                        }
+                    }
+                    .pro-blk{
+                        .pro-sec-head{
+                            h2{
+                                font-size: 1.6rem;
+                                line-height: 1.875rem;
+                                font-weight: 400;
+                            }
+                            h3{
+                                font-size: 3rem;
+                                line-height: 3.516rem;
+                                font-weight: 500; 
+                                span{
+                                    font-size: 1.6rem;
+                                    line-height: 1.875rem;
+                                    font-weight: 400; 
+                                }
+                            }
+                        }
+                    }
+                    .pro-sec-head{
+                    }
+                    .pro-km-blk{
+                        .pro-sec-head{
+                            h3{
+                                padding-bottom: 2.1rem;
+                            }
+                        }
+                        .pro-cntnt{
+                            display: flex;
+                            gap: 10px;
+                            p{
+                               margin: 0; 
+                               padding-bottom: 1.7rem;
+                               @media (max-width: $lg) {
+                                font-size: 1.5rem;
+                               }
+                            }
+                            img{
+                                padding-bottom: 1.7rem;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
