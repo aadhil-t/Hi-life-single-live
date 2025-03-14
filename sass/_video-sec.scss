@@ -38,16 +38,29 @@
             .mySwiper-video{
                 width: 75%;
                 @media (max-width: $sm) {
-                    width: 97%;          
-                    right: -9px;              
+                    width: 98%;
+                    right: 0px;             
                 }
                 .swiper-slide{
+                    .video-img{
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 40%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 15%; // Adjust width
+                            height: 100%; // Adjust height
+                            background: url("/hi-life-single/images/play-icon.svg") no-repeat center center;
+                            background-size: contain; // Use 'cover' if you want it to fill the div
+                          }
+                    }
                     img{
                         @media (max-width: $md) {
                             width: 97%;                        
                         }
                         @media (max-width: $sm) {
-                            width: 90%;                        
+                            width: 100%;                        
                         }
                     }
                     h3{

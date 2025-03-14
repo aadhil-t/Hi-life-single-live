@@ -1,7 +1,16 @@
 .apart-sec{
+    background-color: $primary-color-1;
     .aprt-blk {
+        position: relative;
+        z-index: 0;
+       .container{
         width: 100%;
         display: flex;
+        @media (max-width: $lg) {
+            flex-direction: column;
+            padding: 0;
+        }
+       }
         @media (max-width: 1024px) {
             flex-direction: column;
             width: 100%;
@@ -15,6 +24,13 @@
             justify-content: center;
             @media (max-width: 1024px) {
                 width: 100%;
+            }
+            .swiper-slide{
+                @media (max-width: $sm) {
+                    img{
+                        width: 85%;
+                    }
+                }
             }
         }
         .second-blk {
@@ -76,6 +92,50 @@
                     display: flex;
                     flex-direction: column;
                     .amn-head{
+                        position: relative;
+                        display: inline-block;
+                        // padding: 0 45px;
+                        padding-right: 45px;
+
+                        &::before,
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 56%;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                                width: 560px;
+                                height: 0px;
+                                background: $txt-color-1;
+                                border-top: 1px solid $txt-color-1;
+                                opacity: 30%;
+                                @media (max-width: 1024px) {
+                                    width: 830px;
+                                }
+                                @media (max-width: $md) {
+                                    width: 575px;
+                                }
+                                @media (max-width: $sm) {
+                                    width: 235px;
+                                }
+                                @media (max-width: 375px) {
+                                    width: 185px;
+                                }
+                            }
+            
+                            &::before {
+                                left: 0;
+                            }
+            
+                            &::after {
+                                right: 0;
+                            }
+                            @media (max-width: 834px) {
+                                font-size: 3.5rem;                    
+                            }
+                            @media (max-width: $sm) {
+                                font-size: 3.2rem;
+                            }
                         h2{
                             padding-top: 3.6rem;
                             padding-bottom: 2.8rem;
@@ -90,21 +150,27 @@
                             }
                         }
                         span{
+                         
+
                             font-size: 2.2rem;
                             line-height: 2.578rem;
                             font-weight: 600;
                             @media (max-width: $lg) {
                                 font-size: 1.6rem;
                             }
+                            
                         }
                     }
                     .amn-blk{
                         display: flex;
                         gap: 8px;
-                        justify-content: center;
+                        // justify-content: center;
                         @media (max-width: $lg) {
                             flex-wrap: wrap;
                             justify-content: unset;
+                        }
+                        @media (max-width: $sm) {
+                            gap: 5px;
                         }
                         @media (max-width: 425px) {
                             justify-content: center;
@@ -126,7 +192,11 @@
                             }
                             @media (max-width: $sm) {
                                 gap: 10px;
-                                max-width: 120px;
+                                max-width: 108px;
+                            }
+                            @media (max-width: 409px) {
+                                gap: 10px;
+                                max-width: 105px;
                             }
                             @media (max-width: 375px) {
                                 gap: 10px;
@@ -135,8 +205,9 @@
                             p{
                                 margin: 0;
                                 font-size: 1.3rem;
-                                line-height: 1.523rem;
+                                line-height: 100%;
                                 font-weight: 400;
+                                color: $txt-color;
                             }
                             img{
                                 width: 70px;
@@ -149,6 +220,47 @@
                     display: flex;
                     flex-direction: column;
                     .prox-head{
+                        position: relative;
+                        display: inline-block;
+                        // padding: 0 45px;
+                        padding-right: 45px;
+
+                        &::before,
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 56%;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                                width: 530px;
+                                height: 0px;
+                                background: $txt-color-1;
+                                border-top: 1px solid $txt-color-1;
+                                opacity: 30%;
+                                @media (max-width: 1024px) {
+                                    width: 810px;
+                                    top: 45%;
+                                }
+                                @media (max-width: $md) {
+                                    width: 555px;
+                                    top: 45%;
+                                }
+                                @media (max-width: $sm) {
+                                    width: 215px;
+                                    top: 45%;
+                                }
+                                @media (max-width: 375px) {
+                                    width: 165px;
+                                }
+                            }
+            
+                            &::before {
+                                left: 0;
+                            }
+            
+                            &::after {
+                                right: 0;
+                            }
                         h2{
                             padding-top: 3.5rem;
                             padding-bottom: 2.7rem;
@@ -171,7 +283,8 @@
                     }
                     .pro-km-blk{
                         display: flex;
-                        gap: 134px;
+                        // gap: 134px;
+                        gap: 73px;
                         @media (max-width: $lg) {
                             gap: 30px;
                         }
@@ -194,9 +307,32 @@
                     .pro-blk{
                         .pro-sec-head{
                             h2{
+                                position: relative;
+                                display: inline-block;
+                                padding: 0 15px;
+
                                 font-size: 1.6rem;
                                 line-height: 1.875rem;
                                 font-weight: 400;
+                                &::before,
+                                &::after {
+                                  content: "";
+                                  position: absolute;
+                                  top: 50%;
+                                  left: 0;
+                                  transform: translateY(-50%);
+                                  width: 11px; // Adjust length
+                                  height: 2px;
+                                  background: #FF9900;
+                                  border-top: 2px dashed #FF9900;
+                                }
+                                &::before {
+                                    left: 0;
+                                  }
+                                
+                                  &::after {
+                                    right: 0;
+                                  }
                             }
                             h3{
                                 font-size: 3rem;
@@ -213,6 +349,10 @@
                     .pro-sec-head{
                     }
                     .pro-km-blk{
+                        padding-bottom: 5.7rem;
+                        @media (max-width: $sm) {
+                            padding-bottom: 0;
+                        }
                         .pro-sec-head{
                             h3{
                                 padding-bottom: 2.1rem;
@@ -224,6 +364,7 @@
                             p{
                                margin: 0; 
                                padding-bottom: 1.7rem;
+                               color: $txt-color;
                                @media (max-width: $lg) {
                                 font-size: 1.5rem;
                                }
@@ -237,5 +378,17 @@
 
             }
         }
+    }
+    ::before {
+        content: "";
+        position: absolute;
+        width: 42%;
+        z-index: -1;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(#2c3e4f), to(#152d44));
+        background: linear-gradient(180deg, #264756 0%, #264756 100%);
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 }

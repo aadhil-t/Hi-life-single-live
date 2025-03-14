@@ -7,10 +7,34 @@
         .client-head{
             text-align: center;
             h1{
+                position: relative;
+                display: inline-block;
+                padding: 0 45px;
+
                 font-size: 4rem;
                 line-height: 4.688rem;
                 font-weight: 500;
                 padding-bottom: 9px;
+
+                &::before,
+                &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 35px; // Adjust length
+                height: 1px;
+                background: #169AD8;
+                border-top: 1px dashed #169AD8;
+                }
+
+                &::before {
+                    left: 0;
+                }
+
+                &::after {
+                    right: 0;
+                }
                 @media (max-width: 834px) {
                     font-size: 3.5rem;                    
                 }
@@ -31,17 +55,18 @@
         }
         .client-slider{
             position: relative;
+            box-shadow: 0px 10px 35px 0px #2C3E4F1A;
             .mySwiperclient{
                 margin-right: 12px;
                 @media (max-width: 1024px) {
-                    width: 81%;
-                    margin: 0;
-                    right: -97px;
+                    // width: 85%;
+                    // margin: 0;
+                    // right: -72px;
                 }
                 @media (max-width: $md) {
                     width: auto;
                     right: 0;
-                    margin: 0 170px 0 188px;
+                    // margin: 0 170px 0 188px;
                 }
                 @media (max-width: $sm) {
                     width: 96%;
@@ -51,19 +76,56 @@
                 .swiper-wrapper{
                     .swiper-slide{
                         // background-color: ;
-                        flex-shrink: unset;
+                        // margin-right: 10px !important;
+                        // right: 17px;
+                        // flex-shrink: unset;
+                        // @media (max-width: 1024px) {
+                        //     // margin-right: 25px !important;
+                        // }
+                        // @media (max-width: $md) {
+                        //     margin-right: 50px !important;
+                        //     right: 22px;
+                        // }
+                        // @media (max-width: $sm) {
+                        //         right: 20px;
+                        // }
                         p{
                             font-size: 1.6rem;
                             font-weight: 400;
                             line-height: 3.2rem;
                             text-align: center;
-                            max-width: 40rem;   
+                            max-width: 36rem;   
                         }
                         h4{
                             font-size: 1.8rem;
                             font-weight: 400;
                             line-height: 2.4rem;
+                            max-width: 25rem;
                             text-align: center;
+                        }
+                        .client-blk{
+                            padding: 10px 20px 10px 20px;
+                            width: 100%;
+                            // text-align: -webkit-center;
+                            background-color: #FFFFFF;
+                            box-shadow: 0px 10px 35px 0px #2C3E4F1A;   
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column; 
+
+                            img{
+                                @media (max-width: 1024px) {
+                                    width: 100%;
+                                }
+                            }
+                            @media (max-width: 1024px) {
+                                width: 70%;
+                            }
+                            @media (max-width: $sm) {
+                                width: 100%;
+                                padding: unset;
+                                width: 100%;
+                            }
                         }
                     }
                 }

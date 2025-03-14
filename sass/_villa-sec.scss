@@ -14,10 +14,14 @@
             }
         }
         span{
-            font-size: 3rem;
+            font-size: 4.5rem;
             line-height: 5.273rem;
             font-weight: 700;
             line-height: 4rem;
+            @media (max-width: $sm) {
+                font-size: 3rem;
+                line-height: 4rem;
+            }
         }
         .pristine-blk{
             display: flex;
